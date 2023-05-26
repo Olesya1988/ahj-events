@@ -7,13 +7,9 @@ export default class GameController {
     alert(`
       Игра началась!
       Для победы нужно убить 10 Гоблинов.
-      5 промахов или 5 пропущенных Гоблинов - и Вы проиграли!
+      5 промахов - и Вы проиграли!
       `);
     this.gamePlay.drawUi();
-    this.gamePlay.start();
-  }
-
-  onCellClick() {
-    this.gamePlay.getGameClick();
+    this.gamePlay.getRandomHole();
   }
 }
